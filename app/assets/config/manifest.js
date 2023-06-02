@@ -4,3 +4,12 @@
 //= link_tree ../../../vendor/javascript .js
 //= require jquery
 //= require materialize
+
+
+// $(document).on('turbolinks:load', function () {
+//     $(".dropdown-trigger").dropdown();
+// })
+
+$(document).ready(function () {
+    $(".dropdown-trigger").dropdown();
+})
