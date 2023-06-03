@@ -117,11 +117,14 @@ $secondary-color: color("yellow", "base") !default;
   justify-content: space-between;
   padding: 1rem 3rem;
   margin: 0.5rem 0;
+  box-shadow: 2px 3px 5px 5px gray;
+  max-width: 95%;
+  margin-bottom: 5%;
 }
 
 .show-spendings-title,
 .show-spendings-amount {
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .section-main-page {
@@ -209,10 +212,14 @@ $secondary-color: color("yellow", "base") !default;
   padding: 1rem 0;
   font-size: 1rem;
   border: none;
-  background: #f0f2f1;
+  background-color: #fff;
   border-bottom: solid 1px #909090;
   width: 70%;
   font-family: Montserrat, Times, serif;
+}
+
+.custom-form-field * {
+  background-color: white;
 }
 
 .custom-form-field-text:focus,
