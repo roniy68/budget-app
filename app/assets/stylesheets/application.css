@@ -21,14 +21,14 @@
  */
 
 html {
-    background: #fff;
-    font-family: Montserrat, Times, serif;
+  background: #fff;
+  font-family: Montserrat, Times, serif;
 }
 
 .notice,
 .alert {
-    text-align: center;
-    color: #3778c2;
+  text-align: center;
+  color: #3778c2;
 }
 
 /* body {
@@ -39,57 +39,57 @@ html {
 } */
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .app-font {
-    font-family: Montserrat, Times, serif;
+  font-family: Montserrat, Times, serif;
 }
 
 .bg-primary {
-    background: #3778c2;
+  background: #3778c2;
 }
 
 .bg-primary-light {
-    background: #fff;
+  background: #fff;
 }
 
 .bg-secondary {
-    background: #5fb523;
+  background: #5fb523;
 }
 
 .text-primary {
-    color: #434b54;
+  color: #434b54;
 }
 
 .text-primary-light {
-    color: #545c67;
+  color: #545c67;
 }
 
 .text-secondary {
-    color: #fff;
+  color: #fff;
 }
 
 .text-form {
-    color: #545c67;
+  color: #545c67;
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        width: 80%;
-        margin: 0 auto;
-        border: solid 1px #545c67;
-    }
+  body {
+    width: 80%;
+    margin: 0 auto;
+    border: solid 1px #545c67;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    body {
-        width: 70%;
-    }
+  body {
+    width: 70%;
+  }
 }
