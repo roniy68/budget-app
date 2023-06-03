@@ -10,9 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_03_072642) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_03_075034) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.text "name"
+    t.text "icon"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_ref_id", null: false
+    t.index ["user_ref_id"], name: "index_categories_on_user_ref_id"
+  end
+
+  create_table "spend_items", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "category_id"
+    t.bigint "spending_id"
+    t.index ["category_id"], name: "index_spend_items_on_category_id"
+    t.index ["spending_id"], name: "index_spend_items_on_spending_id"
+  end
+
+  create_table "spendings", force: :cascade do |t|
+    t.text "name"
+    t.decimal "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "author_id"
+    t.index ["author_id"], name: "index_spendings_on_author_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -26,4 +53,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_03_072642) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "categories", "users", column: "user_ref_id"
+  add_foreign_key "spend_items", "categories"
+  add_foreign_key "spend_items", "spendings"
+  add_foreign_key "spendings", "users", column: "author_id"
 end
