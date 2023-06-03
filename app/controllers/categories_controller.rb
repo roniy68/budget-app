@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
     before_action :authenticate_user!
     def index
       @user = current_user
-      @categories = Category.where(user_id: @user.id).includes(:spendings)
+      @categories = Category.where(user_ref_id: @user.id).includes(:spendings)
     end
   
     def new
@@ -14,11 +14,11 @@ class CategoriesController < ApplicationController
       category = Category.new(
         name: category_params['name'],
         icon: category_params['icon'],
-        user_id: @user.id
+        user_ref_id: @user.id
       )
       if category.save
         flash[:success] = 'Category was successfully created'
-        redirect_to user_categories_path(user_id: @user.id)
+        redirect_to user_categories_path(user_ref_id: @user.id)
       else
         flash[:alert] = 'error occured while creating category'
       end

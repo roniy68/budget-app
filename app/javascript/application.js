@@ -8,9 +8,9 @@ import "materialize"
 // Dropdown 
 // original => $( document ).ready(function)
 // console.log($)
-$(document).on('turbolinks:load', function () {
-    $(".dropdown-trigger").dropdown();
-})
+// $(document).on('turbolinks:load', function () {
+//     $(".dropdown-trigger").dropdown();
+// })
 // $(document).ready(function () {
 //     $(".dropdown-trigger").dropdown();
 // })

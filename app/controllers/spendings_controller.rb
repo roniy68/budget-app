@@ -1,7 +1,7 @@
 class SpendingsController < ApplicationController
     def new
       @user = current_user
-      @categories = Category.where(user_id: @user.id)
+      @categories = Category.where(user_ref_id: @user.id)
       @category = Category.find(params[:category_id])
     end
   
@@ -24,7 +24,7 @@ class SpendingsController < ApplicationController
           )
         end
         flash[:success] = 'Spending was added successfully'
-        redirect_to user_category_path(user_id: @user.id, id: params[:category_id])
+        redirect_to user_category_path(user_ref_id: @user.id, id: params[:category_id])
       rescue ActiveRecord::RecordInvalid
         flash[:success] = 'Error creating spending'
       end
