@@ -100,9 +100,9 @@ To run the project, execute the following command:
 
 👤 **Ahmed Hasan Rony**
 
-- GitHub: [@rachelwebdev](https://github.com/roniy68)
-- Twitter:[@rachelisaac13](https://twitter.com/ahroniy)
-- LinkedIn: [Rachel Isaac](https://www.linkedin.com/in/ahroniy)
+- GitHub: [@roniy68](https://github.com/roniy68)
+- Twitter:[@roniy68](https://twitter.com/ahroniy)
+- LinkedIn: [Ahmed Hasan Rony](https://www.linkedin.com/in/ahroniy)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
