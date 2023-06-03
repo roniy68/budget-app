@@ -32,7 +32,7 @@
 
 ## Render Deploy 🚀
 
-[Live demo here](https://budgetapp-ahroniy.onrender.com/)
+[Live demo here](https://beta-spendtracker.onrender.com/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
