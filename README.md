@@ -1,62 +1,58 @@
-<a name="readme-top"></a>
+# Budget App
 
-<a name="readme-top"></a>
-
-<div align="center">
-
-  <img src="readme-assets/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Budget-APP</b></h3>
-
-</div>
-
-# 📗 Table of Contents
-
-## 📑 Table of Contents
-
-- [📊 Recipe-APP ](#-Recipe-APP-)
+- [Budget App](#budget-app)
+- [Budget App ](#budget-app-)
+  - [video demo 🎥](#video-demo-)
+  - [Render Deploy 🚀](#render-deploy-)
   - [🛠 Built With ](#-built-with-)
-    - [🧰 Tech Stack ](#-tech-stack-)
-    - [💎 Key Features ](#-key-features-)
+    - [Tech Stack ](#tech-stack-)
+  - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-    - [Tests](#tests)
-  - [📧 Contact ](#-contact-)
+    - [Run tests](#run-tests)
+  - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [💖 Show your support ](#-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [Acknowledgments](#acknowledgments)
   - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
+* Configuration
 
-# 📊 Rails Blog <a name="about-project"></a>
+# Budget App <a name="about-project"></a>
 
-Rails Blog is a Ruby on rails project. It's a minimalistic presentation of a RoR application
+> This mobile web app allows users to create categories and add transactions to each category. The app will show the total amount spent on each category. The app is built with Ruby on Rails. The app is deployed on Render.
+
+## video demo 🎥
+
+[Video demo here](https://www.loom.com/share/22b5729569284a75bfcadae73f217b43)
+
+## Render Deploy 🚀
+
+[Live demo here](https://budgetapp-ahroniy.onrender.com/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### 🧰 Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
-- Ruby On Rails
-- Node
-- Postgresql
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
+  </ul>
+</details>
 
-<!-- Features -->
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-### 💎 Key Features <a name="key-features"></a>
+## Key Features <a name="key-features"></a>
 
-- Minimalistic user interface
-- Provides options to catalog user's personal album ,books and games
-- Development Tools : Ruby and rbenv 🔗
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
+- [x] register and log in
+- [x] Add new category
+- [x] Add new transactions associated with a category.
+- [x] see the money spent on each category
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -64,112 +60,88 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to use this project, you need
+In order to run this project you need:
 
-<li>Ruby environment installed in your local machine</li>
-<li>Git CLI</li>
+- `Ruby --version 3.2.1`
+- `Ruby on Rails --version ~> 7.0.4`
+- `Postgresql`
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/roniy68/Recipe-APP
-  cd Recipe-APP
+  cd your_desired_folder
+  git clone https://github.com/roniy68/budget-app
 ```
 
 ### Install
 
-Install the dependencies with:
+Install this project gems with:
 
-```sh
-  bundle install
-```
+- After cloning type `cd budget-app`.
+- Run `bundle install` to install all gems.
 
 ### Usage
 
 To run the project, execute the following command:
 
-```sh
-  rails s
-```
+- Run `rails db:create` to create a new database
+- Run `rails db:migrate` to migrate the db and build the schema
+- Run `rails s` to start the server
 
-### Tests
+### Run tests
 
-To run the tests, execute the following command:
+- Run `rspec` to run the tests
 
-```sh
-  rspec spec
-```
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 👥 Author <a name="authors"></a>
 
-<!-- AUTHORS -->
+👤 **Ahmed Hasan Rony**
 
-## 📧 Contact <a name="authors"></a>
+- GitHub: [@rachelwebdev](https://github.com/roniy68)
+- Twitter:[@rachelisaac13](https://twitter.com/ahroniy)
+- LinkedIn: [Rachel Isaac](https://www.linkedin.com/in/ahroniy)
 
-I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
-
-[![Github](https://img.shields.io/badge/GitHub-673AB7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roniy68)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ahroniy)
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahroniy)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmed.hasan.rony@gmail.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **Implement edit entries and remove entries functionalities**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] **implement some UX**
+- [ ] **decent desktop design**
+- [ ] **Implement the left side menu**
 
 <!-- CONTRIBUTING -->
 
-## 📧 Authors <a name="authors"></a>
-
-👤 **Ahmed Hasan Rony**
-
-- **_[Ahmed Hasan Rony](https://github.com/roniy68)_**
-
-👤 **Muhammad Aleem**
-
-- GitHub: [@MAleemH](https://github.com/MAleemH)
-- Twitter: [@MAleemHashmi1](https://twitter.com/MAleemHashmi1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-aleem-hashmi/)
-
-
 ## 🤝 Contributing <a name="contributing"></a>
 
-I welcome any and all contributions to my website! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
+Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/roniy68/Recipe-APP/issues).
+Feel free to check the [issues page](https://github.com/Rachelwebdev/budget-app/issues)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- SUPPORT -->
 
-## 💖 Show your support <a name="support"></a>
+## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please consider giving it a ⭐.
+Give a ⭐️ if you like this project!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgments
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-This project was inspired by:
-
-- [GitHub Finder](https://github.com/JasurbekIsokov/github-finder)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Hat tip to anyone whose code was used
+- Inspiration
+- Credit to the original designer by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./readme-assets/MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
