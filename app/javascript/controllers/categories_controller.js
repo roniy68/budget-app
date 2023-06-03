@@ -11,7 +11,7 @@ export default class extends Controller {
 const createIconPopup = () => {
   const popupWrapper = document.createElement('div');
   popupWrapper.classList.add('popup-wrapper');
-  popupWrapper.id = 'popup-wrapper'
+  popupWrapper.id='popup-wrapper'
   const popup = document.createElement('div');
   popup.classList.add('popup');
   popup.id = 'popup-container';
@@ -37,12 +37,12 @@ const createIconPopup = () => {
   popupBtnGroup.classList.add('popup-btn-group');
 
   const okbutton = document.createElement('button');
-  okbutton.classList.add('popup-btn', 'bg-primary', 'text-secondary')
+  okbutton.classList.add('popup-btn','bg-primary', 'text-secondary')
   okbutton.setAttribute('type', 'button');
   okbutton.textContent = 'Select';
   okbutton.onclick = () => setTextField();
   const cancelbutton = document.createElement('button');
-  cancelbutton.classList.add('popup-btn', 'bg-primary', 'text-secondary')
+  cancelbutton.classList.add('popup-btn','bg-primary', 'text-secondary')
   cancelbutton.setAttribute('type', 'button');
   cancelbutton.textContent = 'Cancel';
   cancelbutton.onclick = () => dismisspopup();
@@ -50,8 +50,8 @@ const createIconPopup = () => {
   popupBtnGroup.appendChild(okbutton);
   popup.appendChild(popupBtnGroup);
   const errMsg = document.createElement('h5');
-  errMsg.id = 'popup-err-msg';
-  errMsg.textContent = ' '
+  errMsg.id='popup-err-msg';
+  errMsg.textContent=' '
   popup.appendChild(errMsg)
   popupWrapper.appendChild(popup);
   document.body.appendChild(popupWrapper);
@@ -62,11 +62,11 @@ const setTextField = () => {
   const selected_radio = document.querySelector(
     "input[type='radio'][name=icon]:checked"
   );
-  if (selected_radio === null) {
+  if (selected_radio === null){
     const erMsg = document.getElementById('popup-err-msg');
-    erMsg.textContent = 'Please select an Icon'
+    erMsg.textContent='Please select an Icon'
   }
-  else {
+  else{
     txtfield.value = selected_radio.value;
     dismisspopup();
   }

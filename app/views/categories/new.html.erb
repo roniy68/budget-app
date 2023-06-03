@@ -1,6 +1,8 @@
+<%= render partial:'/shared/nav_page', locals: {title: 'Add a Category',
+backurl: user_categories_path(user_id:@user.id)} %>
 <div data-controller="categories">
   <div class="form-category">
-    <%= form_with url:user_categories_path(user_ref_id:@user.id),method: :post,
+    <%= form_with url:user_categories_path(user_id:@user.id),method: :post,
     scope: :new_category, local: true, class: "category-form" do |f| %>
     <div class="custom-form-field">
       <%= f.text_field :name, placeholder:'Category Name',
@@ -22,7 +24,7 @@
       <%= f.submit 'Save', class:'blue-button bg-primary text-secondary' %>
     </div>
     <div class="custom-login-actions bg-primary">
-      <%= link_to user_categories_path(user_ref_id:@user.id), id:'cancel-link' do %> 
+      <%= link_to user_categories_path(user_id:@user.id), id:'cancel-link' do %> 
       <button class="blue-button bg-primary text-secondary" >Cancel</button>
       <% end %>
     </div>

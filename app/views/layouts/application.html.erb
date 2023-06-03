@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BudgetApp</title>
+    <title>Spendtracker</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,22 +11,6 @@
   </head>
 
   <body>
-    <%# Navbar %>
-    <header>
-      <%= render 'shared/nav'%>
-    </header>
-
-    <%# Main Body %>
-    <main>
-      <div class="container">
-         <p class="notice"><%= notice %></p>
-         <p class="alert"><%= alert %></p>
-        <%= yield %>
-      </div>
-    </main>
-    
-    <%# Footer %>
-    <%= render 'shared/footer'%>
-    
+    <%= yield %>
   </body>
 </html>

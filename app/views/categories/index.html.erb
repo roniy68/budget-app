@@ -1,13 +1,14 @@
-<section class="custom-container">
-  <div class="custom-categories-container">
+<section class="my-container">
+  <%= render '/shared/nav_main',title: 'Categories'  %>
+  <div class="categories-container">
     <% @categories.each do |category| %>
     <%= link_to user_category_path(user_id:@user.id, id:category.id),
-        class:'custom-category-links' do %>
-        <div class="custom-category-card bg-primary-light text-primary">  
-          <div class="custom-category-card-wrapper">
-            <i class="material-icons outlined custom-material-icon"><%= category.icon%></i>
-            <h4 class="custom-category-card-title text-primary-light"><%= category.name%></h4>
-            <h4 class="custom-category-card-amount text-primary">$ <%= category.total_amount %></h4>
+        class:'category-links' do %>
+        <div class="category-card bg-primary-light text-primary">  
+          <div class="category-card-wrapper">
+            <i class="material-icons outlined material-icon"><%= category.icon%></i>
+            <h4 class="category-card-title text-primary-light"><%= category.name%></h4>
+            <h4 class="category-card-amount text-primary">$ <%= category.total_amount %></h4>
           </div>
         </div>
       <% end %>
@@ -20,5 +21,5 @@
       </button>
     </div>
   <% end %>
-</section>
+  </section>
 

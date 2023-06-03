@@ -2,129 +2,53 @@
 $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 
-@import "materialize";
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-}
-
-//  html {
-//   background: #fff;
-//   font-family: Montserrat, Times, serif;
-// }
-
-.notice,
-.alert {
-  text-align: center;
-  color: #3778c2;
-}
-
-// body {
-//   margin: 0;
-//   height: 100vh;
-//   position: relative;
-//   background: #f0f2f1;
-// }
-
-.app-font {
-  font-family: Montserrat, Times, serif;
-}
-
-.bg-primary {
-  background: #3778c2;
-}
-
-.bg-primary-light {
-  background: #fff;
-}
-
-.bg-secondary {
-  background: #5fb523;
-}
-
-.text-primary {
-  color: #434b54;
-}
-
-.text-primary-light {
-  color: #545c67;
-}
-
-.text-secondary {
-  color: #fff;
-}
-
-.text-form {
-  color: #545c67;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    width: 80%;
-    margin: 0 auto;
-    border: solid 1px #545c67;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    width: 70%;
-  }
-}
-
-.navbar {
+.nav {
   /* position: absolute;
-  top: 0; */
+    top: 0; */
   width: 100%;
 }
 
-.custom-nav-container {
+.nav-container {
   display: flex;
   justify-content: space-between;
 }
 
-.custom-navbar-header {
+.nav-header {
   font-weight: 400;
 }
 
-.custom-nav-container > button {
+.nav-container > button {
   border: none;
   cursor: pointer;
 }
 
-.custom-container {
+.my-container {
   position: relative;
   height: 100vh;
 }
 
-.custom-categories-container {
+.categories-container {
   width: 90%;
   margin: auto;
   height: 80vh;
   overflow-y: scroll;
 }
 
-.custom-category-links {
+.category-links {
   text-decoration: none;
   margin: 0;
 }
 
-.custom-category-card {
+.category-card {
   margin: 0.7rem 0.2rem;
   box-shadow: -2px 2px #f0f2f1;
 }
 
-.custom-category-card-show {
+.category-card-show {
   margin: 0 0.2rem 0.3rem;
 }
 
-.custom-category-card-wrapper {
+.category-card-wrapper {
   padding: 1rem 2rem;
   display: flex;
   flex-direction: row;
@@ -132,23 +56,23 @@ main {
   justify-content: space-between;
 }
 
-.custom-material-icon {
+.material-icon {
   transform: scale(2);
 }
 
-.custom-category-card-title {
+.category-card-title {
   width: 60%;
   font-weight: 300;
   font-size: 1.2rem;
 }
 
-.custom-category-card-amount {
+.category-card-amount {
   width: 20%;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.custom-spendings-container {
+.spendings-container {
   width: 95%;
   margin: 2% auto;
   height: 65vh;
