@@ -1,0 +1,338 @@
+@import "materialize/components/color-variables";
+$primary-color: color("blue", "lighten-2") !default;
+$secondary-color: color("yellow", "base") !default;
+
+.nav {
+  /* position: absolute;
+    top: 0; */
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header {
+  font-weight: 400;
+}
+
+.nav-container > button {
+  border: none;
+  cursor: pointer;
+}
+
+.my-container {
+  position: relative;
+  height: 100vh;
+}
+
+.categories-container {
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.category-links {
+  text-decoration: none;
+  margin: 0;
+}
+
+.category-card {
+  margin: 0.7rem 0.2rem;
+  box-shadow: -2px 2px #f0f2f1;
+}
+
+.category-card-show {
+  margin: 0 0.2rem 0.3rem;
+}
+
+.category-card-wrapper {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.material-icon {
+  transform: scale(2);
+}
+
+.category-card-title {
+  width: 60%;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.category-card-amount {
+  width: 20%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.spendings-container {
+  width: 95%;
+  margin: 2% auto;
+  height: 65vh;
+  overflow-y: scroll;
+}
+
+.nav-buttons {
+  border: none;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.nav-buttons a {
+  color: #fff;
+}
+
+.bottom-btn-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+.bottom-btns-wrapper {
+  width: 100%;
+  padding: 1vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-btns {
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #fff;
+  padding: 0.9rem;
+  cursor: pointer;
+}
+
+.spending-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  margin: 0.5rem 0;
+  box-shadow: 2px 3px 5px 5px gray;
+  max-width: 95%;
+  margin-bottom: 5%;
+}
+
+.show-spendings-title,
+.show-spendings-amount {
+  font-weight: 800;
+}
+
+.section-main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page-container {
+  margin: 10rem 0 0;
+  height: 70vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main-page-header {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main-page-btn-group {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page-btn-group a {
+  width: 100%;
+  padding: 0.2rem;
+  margin: 1rem 0;
+}
+
+.blue-button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  font-family: Montserrat, Times, serif;
+}
+
+.form-registration,
+.form-category {
+  margin: 10% auto;
+  width: 90%;
+}
+
+.custom-form-field-selection {
+  margin: 2rem 0;
+}
+
+.custom-form-field-text {
+  padding: 1rem 0;
+  font-size: 1rem;
+  border: none;
+  background: #f0f2f1;
+  border-bottom: solid 1px #909090;
+  width: 100%;
+  font-family: Montserrat, Times, serif;
+}
+
+.custom-form-field-multi-select {
+  padding: 1rem 0;
+  font-size: 1rem;
+  background: #f0f2f1;
+  border: solid 1px #909090;
+  width: 100%;
+  font-family: Montserrat, Times, serif;
+}
+
+.custom-form-field-checkbox > * {
+  margin: 1rem 0;
+  color: #909090;
+}
+
+.custom-login-actions {
+  margin: 2rem 0;
+}
+
+.custom-form-field-text-small {
+  padding: 1rem 0;
+  font-size: 1rem;
+  border: none;
+  background-color: #fff;
+  border-bottom: solid 1px #909090;
+  width: 70%;
+  font-family: Montserrat, Times, serif;
+}
+
+.custom-form-field * {
+  background-color: white;
+}
+
+.custom-form-field-text:focus,
+.custom-form-field-text-small:focus {
+  outline: none;
+}
+
+.custom-form-field-icon-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-form-field-icon-box button {
+  width: 20%;
+}
+
+.custom-form-field-label {
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: #909090;
+  font-family: Montserrat, Times, serif;
+}
+
+@media screen and (min-width: 576px) {
+  .form-registration,
+  .form-category {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form-registration,
+  .form-category {
+    width: 40%;
+  }
+}
+
+#icon-popup {
+  border: none;
+  font-family: Montserrat, Times, serif;
+  cursor: pointer;
+}
+
+.popup-wrapper {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  background-color: rgb(202, 202, 202);
+}
+
+.popup {
+  width: 90%;
+  margin: 5%;
+  padding: 10% 0;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #545c67;
+  color: #545c67;
+}
+
+.icons-container {
+  width: 100%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.radio-grouping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.popup-btn {
+  cursor: pointer;
+  width: 40%;
+  padding: 0.7rem;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  font-family: Montserrat, Times, serif;
+}
+
+@media screen and (min-width: 576px) {
+  .icons-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .popup {
+    width: 50%;
+    margin: 5% auto;
+  }
+}
